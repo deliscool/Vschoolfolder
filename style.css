@@ -1,0 +1,28 @@
+body {
+    background-color:white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+h1 {
+    font-style: italic;
+    color:grey;
+    margin-left: 6px;
+  }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+div {
+    font-style: italic;
+    margin-left: 6px;
+}
+
+.diff-p {
+  font-style: italic;
+}
+  
