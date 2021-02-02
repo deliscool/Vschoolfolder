@@ -1,0 +1,126 @@
+html, body {
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    font: white;
+  }
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: white;
+}
+
+.content1 {
+  background-color: #F5C6D6;
+  grid-column: 1 / span 4;
+
+}
+
+.content2 {
+  background-color: #EE2E84;
+  grid-column: 1 / span 1;
+}
+
+.content3 {
+    background-color: #EE2E84;
+    grid-column: 2 / span 1;
+}
+
+.content4 {
+    background-color: #EE2E84;
+    grid-column: 3 / span 1;
+}
+
+.content5 {
+    background-color: #EE2E84;
+    grid-column: 4 / span 1;
+}
+
+.content6 {
+    background-color: #85CFD8;
+    grid-column: 1 / span 2;
+}
+
+.content7 {
+    background-color: #85CFD8;
+    grid-column: 3 / span 2;
+}
+
+.content8 {
+    background-color: #8DC63F;
+    grid-column: 1 / span 3;
+}
+
+.content9 {
+    background-color: #E76E34;
+    grid: inherit;
+}
+
+@media only screen and (max-width: 760px) {
+
+    #container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    row-gap: 5px;
+    background-color: white;
+}
+
+.content1 {
+    background-color: #F5C6D6;
+    grid-row: span;    
+    grid-column: 1 / -1;
+}
+
+.content2 {
+    background-color: #EE2E84;
+    grid-row: span;
+    grid-column: 1 / -1;
+}
+
+.content3 {
+    background-color: #EE2E84;
+    grid-row: span;
+    grid-column: 1 / -1;
+}
+
+.content4 {
+    background-color: #EE2E84;
+    grid-row: span;
+    grid-column: 1 / -1;
+}
+
+.content5 {
+    background-color: #EE2E84;
+    grid-row: span;
+    grid-column: 1 / -1;
+}
+
+.content6 {
+    background-color: #85CFD8;
+    grid-row: span;
+    grid-column: 1 / -1;
+}
+
+.content7 {
+    background-color: #85CFD8;
+    grid-row: auto;
+    grid-column: 1 / -1;
+}
+
+.content8 {
+    background-color: #8DC63F;
+    grid-row: auto;
+    grid-column: 1 / -1;
+}
+
+.content9 {
+    background-color: #E76E34;
+    grid-row: auto;
+    grid-column: 1 / -1;
+}
+}
