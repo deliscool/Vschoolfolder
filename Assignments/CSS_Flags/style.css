@@ -1,0 +1,266 @@
+html body{
+    margin: 0px;
+    padding: 1px;
+    }
+
+#France {
+    border: 1px solid black;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    }
+
+.FR-blue {
+    background-color: #002495;
+    height: 300px;
+    width: 200px;
+    }
+
+.FR-white {
+    background-color:white;
+    height: 300px;
+    width: 200px;
+    left: 200px;
+    }
+
+.FR-red {
+    background-color: #ED2938;
+    height: 300px;
+    width: 200px;
+    left: 400px;
+    }
+
+#Germany {
+    border: 1px solid black;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    }
+
+.GY-Black {
+    background: black;
+    width: 200;
+    height: 300;
+    }
+
+.GY-red {
+    background:red;
+    width: 200;
+    height: 300;
+    }
+
+.GY-yellow {
+    background: yellow;
+    width: 200;
+    height: 300;
+    }
+
+#Madagascar {
+    border: 1px solid black;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    position: relative;
+    }
+
+.MR-white {
+    position: absolute;
+    background: white;
+    width: 200px;
+    height: 100px;
+    }
+
+.MR-red {
+    position: absolute;
+    background: red;
+    width: 400px;
+    height: 150px;
+    left: 200px;
+}
+
+.MR-Green {
+    position: absolute;
+    background: green;
+    width: 400px;
+    height: 150px;
+    left: 200px;
+    Top: 150px;
+}
+
+#Switzerland {
+    border: 1px solid black;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    position: relative;
+    }
+
+.Sd-red {
+    background: red;
+    height: 300px;
+    width: 600px;
+    }
+
+.Sd-white {
+    background: white;
+    position: absolute;
+    height: 200px;
+    width: 50px;
+    left: 280px;
+    top: 50px;
+    }
+
+.Sd-white2 {
+    background: white;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    left: 205px;
+    top: 130px;
+    }
+
+#Sweden {
+    border: 1px solid black;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    position: relative;
+    }
+
+.SN-Blue {
+    background: #0269A6;
+    height: 300px;
+    width: 600px;
+    }
+
+.SN-Yellow {
+    background:yellow;
+    position: absolute;
+    height: 300px;
+    width: 50px;
+    left: 200px;
+    }
+    
+.SN-Yellow2 {
+    background:yellow;
+    position: absolute;
+    height: 50px;
+    width: 600px;
+    top: 120px;
+    }
+
+#Gambia {
+    border: 1px solid black;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    position: relative;
+    }
+
+.GA-red {
+    background:red;
+    width: 600px;
+    height: 100px;
+    position: absolute;
+    }
+    
+.GA-White {
+    background: white;
+    width: 600px;
+    height: 20px;
+    top: 80px;
+    left: 0px;
+    position: absolute;
+    }
+.GA-Blue {
+    background: blue;
+    width: 600px;
+    height: 60px;
+    top: 110px;
+    position: absolute;
+    }
+    
+.GA-White2 {
+    background: white;
+    width: 600px;
+    height: 20px;
+    top: 180px;
+    position: absolute;
+    }
+  
+.GA-Green {
+    background: green;
+    width: 600px;
+    height: 100px;
+    top: 200px;
+    position: absolute;
+}
+  
+#Japan {
+    border: 1px solid black;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    position: relative;
+    }
+
+.JN-white {
+    background: white;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    }
+
+.JN-red {
+    background: red;
+    height: 180px;
+    width: 180px;
+    bottom: 60px;
+    left: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+#Niger {
+    border: 1px solid black;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    position: relative;
+    }
+
+.NR-orange {
+    background: orange;
+    width: 600px;
+    height: 100px;
+    top: 0px;
+    position: absolute;
+    }
+
+.NR-white {
+    background:white;
+    width: 600px;
+    height: 100px;
+    top: 100px;
+    position: absolute;
+    }
+        
+.NR-Green {
+    background:green;
+    width: 600px;
+    height: 100px;
+    top: 200px;
+    position: absolute;
+    }
+      
+.NR-Orange2 {
+    background: orange;
+    height: 80px;
+    width: 80px;
+    bottom: 110px;
+    left: 260px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    }
