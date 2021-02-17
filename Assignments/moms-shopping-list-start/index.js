@@ -23,7 +23,7 @@ form.addEventListener("submit", function(event){
     newLi.append(dButton);
     
 
-    deleteButton.addEventListener("click", function () {
+    dButton.addEventListener("click", function () {
         newLi.remove();
     })
     editButton.addEventListener("click", function () {
