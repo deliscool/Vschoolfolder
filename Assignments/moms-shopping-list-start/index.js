@@ -1,16 +1,25 @@
 const form = document.addItem
 
-form.addEventListener("submit", function (e) {
-    e.preventDefault()
+form.addEventListener("submit", function(event){
+    event.preventDefault()
+    
+    //assign new elements 
+    const newLi = document.createElement("li");
+    const newDiv = document.createElement("div");
 
-    const listUl = document.getElementById("li");
-    const listDiv = document.createElement("div")
-    listDiv.textcontent = title.value;
+    newDiv.textContent = title.value;
     form.title.value = "";
 
-    const shoppingList = document.getElementById("list");
-    listItem.append(listDiv)
-    shoppingList.append(listItem);
+    const shopList = document.getElementById("list");
+    newLi.append(newDiv);
+    shopList.append(newLi);
 
-}
-)
+    const editButton = document.createElement('button');
+    editButton.textContent = "Edit";
+    newLi.append(editButton);
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent("X");
+    newLi.append(deleteButton);
+    newLi.idName = "list";
+})
