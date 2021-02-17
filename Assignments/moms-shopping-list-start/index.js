@@ -18,8 +18,15 @@ form.addEventListener("submit", function(event){
     editButton.textContent = "Edit";
     newLi.append(editButton);
 
-    const deleteButton = document.createElement("button");
-    deleteButton.textContent("X");
-    newLi.append(deleteButton);
-    newLi.idName = "list";
+    const dButton = document.createElement('button');
+    dButton.textContent = "X";
+    newLi.append(dButton);
+    
+
+    deleteButton.addEventListener("click", function () {
+        newLi.remove();
+    })
+    editButton.addEventListener("click", function () {
+        newLi.textContent = ("Nope");
+    })
 })
