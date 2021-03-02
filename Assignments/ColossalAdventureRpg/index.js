@@ -19,10 +19,10 @@ function Animals (animalName, minDamage, maxDamage, HP, item) {
 }
 
 
-animal.push(new Animals("a team monkeys", 40, 70, 50, "Banana Peel"));
+animal.push(new Animals("a team of monkeys", 40, 70, 50, "Banana Peel"));
 animal.push(new Animals("a Lioness", 60, 90, 70, "Claws"));
-animal.push(new Animals("a dart Frog", 70, 90, 90, "Poison Potion"));
-animal.push(new Animals("a human tree", 50, 70, 130, "Beating Staff"));
+animal.push(new Animals("a poisionous dart Frog", 70, 90, 90, "Poison Potion"));
+animal.push(new Animals("a flesh eating tree", 50, 70, 130, "Beating Staff"));
 
 //Game introduction, name and start request
 
