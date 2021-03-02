@@ -1,4 +1,9 @@
 // Soil Calculator
+
+//Things to note:
+//pH 0-7 is acidic
+//7-14 is basic
+// 7 is neutral
 function sampleFunction() {
     var user = prompt("What pH level is your soil?");
     if (user <= 8) {
