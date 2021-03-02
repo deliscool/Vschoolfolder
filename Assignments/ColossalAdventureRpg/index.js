@@ -43,38 +43,39 @@ const start = readlineSync.question('Shall we start? [Y] or [N]: ', {limit: ["Y"
 const playerAlive = readlineSync.question(chalk.yellow(''+playerName+', as you are journeying through the jungle, try not to get eaten 🙈. Please choose from the following options....(hit enter)'))
 
 
-playerPlaying = true;
-while (playerPlaying == true) {
-
-isplayerOptions = true
-    while(isplayerOptions == true){
-        //while the player  is still active 
-    {
-        const isPlayerOption1 = readlineSync.question(''+playerName+' here are your options 🎒 \n [W]alk  \n [P]rint status  \n [Q]uit \n' , {limit: ["w","p","q"]})
-            switch (isPlayerOption1){ 
+let isPlayerOptions = true;
+let count = 0;
+while (isPlayerOptions) {
+     //while the player  is still active 
+        const playerOption = readlineSync.question(''+playerName+' here are your options 🎒 \n [W]alk  \n [P]rint status  \n [Q]uit \n' , {limit: ["w","p","q"]})
+            switch (playerOption){ 
                 case "q":
                     console.log (chalk.red('You have Quit 😵!!!...'))
                     isplayerOptions = false;
-                    gameOver = true;
+                    process.exit()
                     break;
                 case "p":
-                    console.log (chalk.blue(''+playerName+' has ' + playerHealth + ' HP, and the following items: ' + backpack));
-                    isplayerOptions = false;
+                    console.log(chalk.blue(playerName+' has ' + playerHealth + ' HP, and the following items: ' + backpack));
                     break;
                 case "w":
-                    console.log (chalk.green(''+playerName+' is walking '));
-                    isplayerOptions = false;
+                    console.log (chalk.green(playerName+' is walking '));
                     explore()
            }
         }
 
+    
+
         function explore() {
-            let num = Math.floor(Math.random()*4)
-            if (num === 3) {
+
+            if (count === 3) {
                 battle()
+                count = 0
             } else {
                 console.log(chalk.yellow("Walking..."))
             }
+            count ++;
+        }
+
 
         function animalSelector() {
                 let randomAnimal = animal[Math.floor(Math.random()*animal.length)];
@@ -98,7 +99,7 @@ isplayerOptions = true
                 let attack = Math.floor(Math.random() * (obj.maxDamage - obj.minDamage)) + obj.minDamage;
                 let animalAttack = Math.floor(Math.random()* (obj.maxDamage - obj.minDamage));
                 while (playerHealth > 0 && obj.HP > 0) {
-                    let runFight = readlineSync.keyIn(chalk.yellow('Is getting to close! Are you going to fight (f) or Run (r)? ', {limit: 'fr'}))  
+                    let runFight = readlineSync.keyIn(chalk.yellow('Is getting to close! Are you going to fight (f) or Run (r)? ', {limit: ["f","r"]}))  
                     if (runFight === 'f') {
                         console.log(chalk.blue('You are fighting back! '));
                         obj.HP = obj.HP - attack
@@ -143,9 +144,10 @@ isplayerOptions = true
         
 
 
-    }
+    
 
-
+// switch to ternary because its a binary statement refer to KK notes
+//only use switch when you have more than 3 options
 const isPlayerOption3 = readlineSync.question(chalk.yellow("Play again? \n [Y]es? \n [N]o?",{limit:["y","n"]}));
     switch(isPlayerOption3){ 
         case 'y':
@@ -157,6 +159,4 @@ const isPlayerOption3 = readlineSync.question(chalk.yellow("Play again? \n [Y]es
             playerPlaying = false;
             process.exit()
             break;
-}
-    }
 }
