@@ -1,4 +1,4 @@
-//var fruit = ["banana", "orange", "apple", "kiwi"]
+var fruit = ["banana", "orange", "apple", "kiwi"]
 
 
 // loop that prints to the console the numbers 0 through 9
@@ -35,9 +35,9 @@
 //var fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
 
 //for loop that will push every other fruit to an array.
-//for (var i = 0; i < fruit.length; i++) {
-//  console.log(fruit[i++])
-//}
+for (var i = 0; i < fruit.length; i++) {
+console.log(fruit[i++])
+}
 
 //Silver Medal
 
@@ -84,12 +84,12 @@ var peopleArray = [
 
 
 //gold Nested
-//var newArr = []
-//for (var i = 0; i <= 2; i++) {
-//    var newArr2 = [];
-//    for (var j = 0; j <= 2; j++) {
-//        newArr2.push(0);
-//    }
-//    newArr.push(newArr2)
-//}
-//console.log(newArr);
+var newArr = []
+for (var i = 0; i <= 2; i++) {
+   var newArr2 = [];
+   for (var j = 0; j <= 2; j++) {
+       newArr2.push(0);
+   }
+   newArr.push(newArr2)
+}
+console.log(newArr);
