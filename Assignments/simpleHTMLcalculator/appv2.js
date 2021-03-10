@@ -1,3 +1,6 @@
+//this version contains output html element tag
+
+
 const form1 = document.additionForm
 
 form1.getElementById("submit1").addEventListener('click', function addButton(e) {
