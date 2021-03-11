@@ -12,3 +12,17 @@
     background-color: lightseagreen;
     padding: 50px 50px 50px 50px;
 }
+
+p {
+    border: 1px solid space blue;
+}
+
+/* input {
+    background: blue;
+    border: 1px dotted red;
+} */
+
+.container {
+    display: flex;
+    border: 1px solid lightcoral;
+}

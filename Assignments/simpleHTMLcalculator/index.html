@@ -7,42 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="input1">
-        <form name="additionForm">
-            <input type="number" name="Num1">
+    <form name="simpleCal">
+        <div id="input1">
+            <input type="number" name="num1"/>
             +
-            <input type="number" name="Num2">
-            =
-            <output name="output1" for="Num1 Num2"></output>
+            <input type="number" name="num2"/>
+            = <p>0</p>
             <br>
-            <input type="submit" id="submit1"/>
-        </form>
-    </div>
+            <button id="addBtn">Submit</button>
+        </div>
 
-    <div id="input2">
-        <form name="subtractionForm">
-            <input type="number" name="Num1">
+        <div id="input2" class='container'>
+            <input type="number" name="num3"/>
             -
-            <input type="number" name="Num2">
+            <input type="number" name="num4"/>
             =
-            <output name="output2" for="Num1 Num2"></output>
             <br>
-            <input type="submit" id="submit2">
-        </form>
-    </div>
+            <button id="subBtn">Submit</button>
+        </div>
 
-    <div id="input3">
-        <form name="mulitplicationForm">
-            <input type="number" name="Num1">
+        <div id="input3">
+            <input type="number" name="num5">
             *
-            <input type="number" name="Num2">
-            =
-            <output name="output3" for="Num1 Num2"></output>
+            <input type="number" name="num6">
+            = 
+            <p>0</p>
             <br>
-            <input type="submit" id="submit3">
-        </form>
-    </div>
-    
+            <button id="mulBtn">Submit</button>
+        </div>
+    </form>
+    <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
 </html>
