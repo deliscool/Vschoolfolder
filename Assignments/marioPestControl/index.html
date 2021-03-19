@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mario Pest Control</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <!-- BEGIN: Sticky Header -->
+            <div id="header_container">
+                <div id="header">
+                    Mario Pest Control
+                </div>
+            </div>
+        <!-- END: Sticky Header -->
+ 
+        <!-- BEGIN: Page Content -->
+            <div id="container">
+                <div id="content">
+                    <h2>Baddie Tracker Form</h2>
+                <div>
+                    <form name = "baddieTracker">
+
+                        <label for="clientname">Client's Name:</label><br> 
+                        <input type="text" size ="30" name="clientName"><br>
+                        <label for="dateofservice">Date of Service:</label><br> 
+                        <input type="date" name="DateOfService"><br>
+                        
+                        <p><img src="artifacts/Goomba.png" style="width:50px;height:50px;"></p>
+                        <p>Price per Goomba: $5.00 💰</p>
+                        <label for="goombas">Goombas caught:</label><br>
+                        <input type="number" id="goombas" name="goombas"><br>
+                        
+                        <p><img src="artifacts/Bob-Omb_MK8.png" style="width:50px;height:50px"></p>
+                        <p> Price per Bomb-ombs: $7.00 💰</p>
+                        <label for="bobOmbs"> Bob-ombs caught:</label><br>
+                        <input type="number" id="bobOmbs" name="bobOmbs"><br>
+                        
+                        <p><img src="artifacts/Cheep_Cheep.png" style="width:50px;height:50px;"/></p>
+                        <p>Price per Cheep-cheeps: $11.00 💰 </p>
+                        <label for="cheepCheeps"> Cheep-Cheeps caught:</label><br>
+                        <input type="number" id="cheepCheeps" name="cheepCheeps" >
+                        <br>
+                        <br>
+                        
+                        <p ><input type ="submit" id ="submit" value= "Submit"/></p>         
+                    </form>
+                    <hr/>
+                    
+
+                    <h2>Pest Receipt:</h2>
+                    <p id = "totalPest"></p>
+                    <!-- Total -->
+                     </ul>
+
+            </div>
+        </div>
+
+            </div>
+        <!-- END: Page Content -->
+ 
+        <!-- BEGIN: Sticky Footer -->
+        <div id="footer_container">
+            <div id="footer">
+                contact@mariopestcontrol.com |
+                www.mariopestcontrol.com |
+                928 Red Shroom Street, Peach City, Utah
+            </div>
+        </div>
+        <!-- END: Sticky Footer -->
+    
+        <script src="index.js"></script>
+    </body>
+</html>
+
