@@ -1,0 +1,139 @@
+/* HTML Elements */
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {  
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+h2 { 
+	font: sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* Specifics Divs */
+.container {
+    /* give the container display grid */
+    display: grid;
+    /* with six rows, 50px high */
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    /* default all cells/children on the left be 2/3 the screen width, and all on the left 1/3 */
+    grid-template-columns: 2fr 1fr;
+}
+.container > div {
+    border: solid black 2px;
+
+}
+
+.authors {
+    background-color: lightcoral
+}
+.links {
+    background-color: lightpink
+}
+
+.headercontainer {
+    background-image: url("/artifacts/zengardenheader.jpeg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 20vw;
+    /* background-color: teal; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* object-fit: contain; */
+    font: 75% georgia, sans-serif;
+	color: #555753; 
+}
+
+.footer {
+    /* make these span the width of the page */
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: burlywood;
+   color: white;
+   text-align: center;
+   font-size: xx-large;
+
+}
+
+
+
+@media (max-width: 900px){
+    /* use this media query to help these two cells drop to the bottom when screens are smaller */
+    .authors {
+         
+    }
+    .links {
+
+    }
+    /* container could use some help so that it's children are full screen width */
+    .container {
+        
+    }
+}
+
+/* FLEX */
+/* use flexbox to make the icons behave like css zen garden's social icons */
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+  
+}
+
+.icons > div {
+    width: 30px;
+    height: 30px;
+    color:whitesmoke;
+
+}
+
+.icons i {
+    filter: invert(0);
+}
+
+.icons:hover {
+    background:  burlywood;
+}
+
+.icons:hover i {
+    filter: invert(1);
+}
