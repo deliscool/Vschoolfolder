@@ -1,0 +1,44 @@
+.footerbg {
+
+}
+
+.footer {
+    /* make these span the width of the page */
+   
+
+}
+
+
+/* FLEX */
+/* use flexbox to make the icons behave like css zen garden's social icons */
+
+/*.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    background-color: #5F5F5E;
+    align-items: center;
+    height: 150px;
+}
+
+
+.icons > div {
+    width: 30px;
+    height: 30px;
+    color:whitesmoke;
+
+}
+
+.icons i {
+    filter: invert(0);
+}
+
+.icons:hover {
+    background: 5F5F5E;
+}
+
+.icons:hover i {
+    filter: invert(1);
+}

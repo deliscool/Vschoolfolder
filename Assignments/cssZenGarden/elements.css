@@ -1,0 +1,43 @@
+/* HTML Elements */
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {  
+	margin: 0; 
+	padding: 0;
+}
+p { 
+	margin-top: 0; 
+
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-left: 3vw;
+    color: white;
+}
+
+h2 { 
+	font: italic 1.5em "Fira Sans", serif;
+	margin-bottom: 0; 
+	color: #FFEFD5;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: whitesmoke;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #caa732;
+	}
+abbr {
+	border-bottom: none;
+	}

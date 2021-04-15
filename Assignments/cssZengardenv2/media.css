@@ -1,0 +1,116 @@
+@media only screen and (min-width: 1135px) {
+    #header-img {
+        background-image: url("/asset/header1zenbackground.jpg");
+        grid-row: 1/2;
+    }
+    
+    #grid-container {
+        display: grid;
+        grid-template-rows: repeat(10, auto);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #one {
+        background-color: none;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 15vh;
+    }
+    
+    #three-context {
+        margin: 1vh 3vw 1vh 3vw;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    h1 {
+        margin-left: 3vw;
+    }
+
+    h2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    #two {
+    background-color: rgba(255, 255, 255, 0.2);
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 1vh;
+    height: 5vh;
+    margin-top: 5vh;
+    }
+
+    #three {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    }
+
+    #four {
+    background-color:#d1bea8;
+    opacity: .4;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    }
+
+    #five {
+    background-color: white;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    }
+
+    #six {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    background-image: url("/asset/Blank-Template-Wallpaper.jpg");
+    }
+
+    #seven {
+    background-color:#acacac;
+    opacity: .9;
+    grid-column: 1/4;
+    grid-row: 7/8;
+    padding: 3vh;
+    font-family: verdemoderna;
+    }
+
+    a {
+    text-decoration: none;
+    }
+    
+    #eight {
+        background-color:#e3dac9;
+        opacity: .4;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        
+    }
+    
+    #nine {
+        grid-column: 3/4;
+        grid-row: 3/4;
+        background-color:#d1bea8;
+        opacity: .4;
+    }
+    
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    
+    li {
+        width: 30vw;
+        padding: 0.2rem 1.5rem 0.2rem 2rem;
+        border-top: solid 1px #d9e3dc;
+        color: grey;
+        font-style: italic;
+        list-style: none;
+    }
+    
+}
