@@ -1,34 +1,67 @@
 {
     "appetizers": [
         {
-            "name": "Mediterranean Platter",
-            "age": 20,
-            "isAlive": true,
-            "friends": ["john", "betty", "jake"],
-            "address": {
-                "street": "123 street",
-                "city": "SLC"
-            }
+            "name": "Charcuterie Board",
+            "ingredients": ["pates", "crackers", "olives", "prosciotto", "havarti"],
+            "description": "An array of cured meat, cheese and fermented veggies"
         },
         {
-            "name": "Steve",
-            "age": 20,
-            "isAlive": true,
-            "friends": ["john", "betty", "jake"],
-            "address": {
-                "street": "123 street",
-                "city": "SLC"
-            }
+            "name": "Fresh Spring Roll",
+            "ingredients": ["Shrimp", "shaved brisket", "mint", "bean sprouts", "cucumber", "rice paper"],
+            "description": "Declicious bite-sized meatballs with tasty Greek herbs fried in olive oil. "
         },
         {
-            "name": "Steve",
-            "age": 20,
-            "isAlive": true,
-            "friends": ["john", "betty", "jake"],
-            "address": {
-                "street": "123 street",
-                "city": "SLC"
-            }
+            "name": "Tempura Veggies",
+            "ingredients": ["Okra", "Mushroom", "Sweet Potato", "Kale", "Shishito Peppers"],
+            "description": "Lightly fried in a fragant tempura batter "
+        }
+    ],
+    "cold sands": [
+        {
+            "name": "Classic Cold Cut",
+            "ingredients": ["Ham", "Turkey", "red onion", "lettuce", "tomato", "Bread"],
+            "description": "Simple and filling cold cut. "
+        },
+        {
+            "name": "Breadless BLT",
+            "ingredients": ["Cold cut bacon", "secret sauce", "tomato", "lettuc", "bread"],
+            "description": "For the ps"
+        }
+    ],
+    "hot sands": [
+        {
+            "name": "Greek Salad Sandwich",
+            "ingredients": ["bread", "tzatziki sauce", "peperoncini", "tomatoes", "feta"],
+            "description": "Warm bread topped with delicious sauce, cucumbers, olives, feta, and MORE. "
+       },
+        {
+            "name": "Meatball Sub",
+            "ingredients": ["ground beef", "sheep meat", "mint", "eggs", "stale bread", "olive oil", "bread"],
+            "description": "Our delicious meatballs in a sub with all the toppings you could want. "
+        }
+    ],
+    "desserts": [
+        {
+            "name": "Greek Filo Pull-Apart",
+            "ingredients": ["filo", "butter", "brown sugar", "spices", "syrup"],
+            "description": "This Greek-inspired pastry dessert is perfect for a cold winter's night. "
+        },
+        {
+            "name": "Lemon Bougatsa",
+            "ingredients": ["ice cream", "butter", "eggs", "milk", "lemon"],
+            "description": "Perfect for sharing, this Greek dessert is sweet, tasty, and low-fat. Served with ice cream."
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Coke",
+            "ingredients": ["natural flavors", "unnatural flavors", "sugar", "more sugar", "coke"],
+            "description": "The best way to enjoy some calories."
+        },
+        {
+            "name": "Water",
+            "ingredients": ["water"],
+            "description": "The best beverage known to humankind. Simple. Delicious. Refreshing. "
         }
     ]
 }
