@@ -1,6 +1,5 @@
 //Step one Write a function that gets the JSON and parses the JSON to create an array of objects.
 
-
 const xhr = new XMLHttpRequest()
 
 xhr.open("GET", "https://api.vschool.io/pokemon", true)
@@ -9,9 +8,8 @@ xhr.send();
 xhr.onreadystatechange = function () {
     if(this.readyState === 4 && status ===200) {
         const JSONdata = xhr.responseText
-        const pdata = JSON.parse(JASONdata)
-        console.log (parsedData.objects[0].pokemon)
-        displayData(parsedData.objects[0].pokemon)
+        const data = JSON.parse(JSONdata)
+        console.log(showData(data.results))
     }
 }
 
